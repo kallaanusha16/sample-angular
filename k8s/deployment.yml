@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-angular-deployment
+spec:
+  replicas: 1 # Number of replicas/instances you want to run
+  selector:
+    matchLabels:
+      app: sample-angular
+  template:
+    metadata:
+      labels:
+        app: sample-angular
+    spec:
+      containers:
+      - name: sample-angular-container
+        image: anusha1681990/anusha-repo:latest # Replace with your Angular image and tag
+        ports:
+        - containerPort: 8084 # Port where your Angular app runs

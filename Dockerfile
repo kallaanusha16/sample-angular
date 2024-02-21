@@ -24,7 +24,7 @@ FROM nginx:alpine
 COPY --from=build /app/dist/sample-angular/browser   /usr/share/nginx/html
 
 # Expose port 80
-EXPOSE 8084
+EXPOSE 80
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]

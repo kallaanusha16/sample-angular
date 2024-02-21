@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sample-angular-container
-        image: anusha1681990/anusha-repo:latest # Replace with your Angular image and tag
+        image: anusha1681990/anusha-repo:970651dd04c5be3db3c05c096eddc78993e2abb2 # Replace with your Angular image and tag
         ports:
-        - containerPort: 8084 # Port where your Angular app runs
+        - containerPort: 80 # Port where your Angular app runs
